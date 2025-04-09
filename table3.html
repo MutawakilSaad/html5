@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>جدول مع دمج الصفوف والأعمدة</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
 
+  <table>
+    <tr>
+      <th colspan="4">تقرير مبيعات الربع السنوي</th>
+    </tr>
+    <tr>
+      <th rowspan="2">المنطقة</th>
+      <th colspan="2">المنتجات</th>
+      <th rowspan="2">الإجمالي</th>
+    </tr>
+    <tr>
+      <th>المنتج أ</th>
+      <th>المنتج ب</th>
+    </tr>
+    <tr>
+      <td>الشمال</td>
+      <td>150</td>
+      <td>200</td>
+      <td>350</td>
+    </tr>
+    <tr>
+      <td>الجنوب</td>
+      <td>250</td>
+      <td>180</td>
+      <td>430</td>
+    </tr>
+    <tr>
+      <td>الشرق</td>
+      <td>120</td>
+      <td>300</td>
+      <td>420</td>
+    </tr>
+    <tr>
+      <td colspan="3">إجمالي المبيعات</td>
+      <td>1200</td>
+    </tr>
+  </table>
+
+</body>
+</html>
