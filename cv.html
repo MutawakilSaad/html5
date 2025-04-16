@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>نموذج تسجيل مستخدم جديد</title>
+</head>
+<body>
+
+  <h1>تسجيل مستخدم جديد</h1>
+
+  <form action="/submit-registration" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+      <legend>معلومات شخصية</legend>
+
+      <label for="username">اسم المستخدم:</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="email">البريد الإلكتروني:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="password">كلمة المرور:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="birthday">تاريخ الميلاد:</label><br>
+      <input type="date" id="birthday" name="birthday"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>معلومات إضافية</legend>
+
+      <p>الجنس:</p>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">ذكر</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">أنثى</label><br><br>
+
+      <p>اللغات التي تجيدها:</p>
+      <input type="checkbox" id="arabic" name="languages" value="arabic">
+      <label for="arabic">العربية</label><br>
+      <input type="checkbox" id="english" name="languages" value="english">
+      <label for="english">الإنجليزية</label><br>
+      <input type="checkbox" id="french" name="languages" value="french">
+      <label for="french">الفرنسية</label><br><br>
+
+      <label for="country">الدولة:</label><br>
+      <select id="country" name="country">
+        <option value="sa">السعودية</option>
+        <option value="eg">مصر</option>
+        <option value="us">الولايات المتحدة</option>
+        <option value="fr">فرنسا</option>
+      </select><br><br>
+
+      <label for="photo">تحميل صورة شخصية:</label><br>
+      <input type="file" id="photo" name="photo"><br><br>
+    </fieldset>
+
+    <input type="submit" value="تسجيل">
+    <input type="reset" value="إعادة تعيين">
+
+  </form>
+
+</body>
+</html>
