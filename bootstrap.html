@@ -1,1 +1,44 @@
 
+<div class="container">
+    <div class="page-header text-center">
+        <h2>آلة حاسبة لفائدة القرض</h2>
+    </div>
+
+    <form id="form1" runat="server" class="form-horizontal">
+        <div class="form-group">
+            <label for="txtLoanAmount" class="control-label col-md-4">مبلغ القرض:</label>
+            <div class="col-md-8">
+                <asp:TextBox ID="txtLoanAmount" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="txtInterestRate" class="control-label col-md-4">معدل الفائدة السنوي (%):</label>
+            <div class="col-md-8">
+                <asp:TextBox ID="txtInterestRate" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="txtLoanTerm" class="control-label col-md-4">مدة القرض (بالسنوات):</label>
+            <div class="col-md-8">
+                <asp:TextBox ID="txtLoanTerm" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-4 col-md-8">
+                <asp:Button ID="btnCalculate" runat="server" Text="حساب" CssClass="btn btn-primary" OnClick="btnCalculate_Click" />
+            </div>
+        </div>
+        
+        <div class="form-group" id="divResults" runat="server" visible="false">
+            <div class="col-md-12">
+                <hr />
+                <h4>النتائج:</h4>
+                <p><strong>الفائدة الإجمالية:</strong> <asp:Label ID="lblTotalInterest" runat="server"></asp:Label></p>
+                <p><strong>إجمالي المبلغ المستحق:</strong> <asp:Label ID="lblTotalAmount" runat="server"></asp:Label></p>
+            </div>
+        </div>
+    </form>
+</div>
