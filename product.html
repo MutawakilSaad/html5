@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+ 
+    <h2>Product List</h2>
+ 
+    <form action="Summary.aspx" method="post">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td><img src="laptop.jpg" alt="Laptop" width="100" /></td>
+                    <td>A high-performance laptop.</td>
+                    <td>1200.00</td>
+                    <td><input type="checkbox" name="product1" value="1200.00" /></td>
+                </tr>
+                <tr>
+                    <td>Smartphone</td>
+                    <td><img src="smartphone.jpg" alt="Smartphone" width="100" /></td>
+                    <td>The latest smartphone model.</td>
+                    <td>800.00</td>
+                    <td><input type="checkbox" name="product2" value="800.00" /></td>
+                </tr>
+                <tr>
+                    <td>Headphones</td>
+                    <td><img src="headphones.jpg" alt="Headphones" width="100" /></td>
+                    <td>Noise-cancelling headphones.</td>
+                    <td>150.00</td>
+                    <td><input type="checkbox" name="product3" value="150.00" /></td>
+                </tr>
+                <tr>
+                    <td>Keyboard</td>
+                    <td><img src="keyboard.jpg" alt="Keyboard" width="100" /></td>
+                    <td>Mechanical keyboard for gaming.</td>
+                    <td>75.00</td>
+                    <td><input type="checkbox" name="product4" value="75.00" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <input type="submit" value="View Summary" />
+    </form>
+ 
+</body>
+</html>
