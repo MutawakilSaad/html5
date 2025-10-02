@@ -1,1 +1,20 @@
+<div>
+            <h1>تجربة Cookies تسجيل الدخول</h1>
+            
+            <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
+            <hr />
 
+            <asp:Panel ID="pnlLogin" runat="server">
+                <h3>تسجيل الدخول</h3>
+                اسم المستخدم: <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox><br /><br />
+                كلمة المرور: &nbsp; <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox><br /><br />
+                <asp:CheckBox ID="chkRememberMe" runat="server" Text="تذكرني على هذا الجهاز" /><br /><br />
+                <asp:Button ID="btnLogin" runat="server" Text="دخول" OnClick="btnLogin_Click" />
+            </asp:Panel>
+
+            <asp:Panel ID="pnlWelcome" runat="server" Visible="False">
+                <h3>أهلاً بعودتك، <asp:Label ID="lblWelcomeUser" runat="server"></asp:Label>!</h3>
+                <p>لقد تم استعادة بياناتك من الـ Cookies.</p>
+                <asp:Button ID="btnLogout" runat="server" Text="حذف Cookies تسجيل الدخول" OnClick="btnLogout_Click" />
+            </asp:Panel>
+        </div>
